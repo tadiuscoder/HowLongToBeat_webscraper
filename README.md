@@ -15,7 +15,7 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(chrome_options=options)
 
-game_nr = 1
+game_nr = 15259
 
 while game_nr <= 150000:
 
@@ -23,7 +23,7 @@ while game_nr <= 150000:
 
         #Access URL, get text from page and insert into variable
         url='https://www.howlongtobeat.com/game/'+str(game_nr)
-        time.sleep(4)
+        #time.sleep(1)
         driver.get(url)
         print("Test driver.get OK")
         page = driver.page_source
