@@ -15,7 +15,7 @@ options.add_argument('--headless')
 options.add_argument('--disable-gpu')
 driver = webdriver.Chrome(chrome_options=options)
 
-game_nr = 15259
+game_nr = 1
 
 while game_nr <= 150000:
 
